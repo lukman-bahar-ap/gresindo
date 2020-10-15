@@ -23,7 +23,6 @@ workbox.routing.registerRoute(
 workbox.precaching.precacheAndRoute([
   { url: '/index.html', revision: '1' },
   { url: '/team-info.html', revision: '1' },
-  { url: '/push.js', revision: '1' },
   { url: '/app.js', revision: '1' },
   { url: '/pages/home.html', revision: '1' },
   { url: '/manifest.json', revision: '1' },
