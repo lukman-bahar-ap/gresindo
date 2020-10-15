@@ -11,7 +11,8 @@ const PremissionFunct = () => {
       navigator.serviceWorker.register('/service-worker.js')
         .then(function (registration) {
           console.log('Registrasi service worker berhasil.');
-          registration;
+          //registration;
+          return navigator.serviceWorker.ready;
         }).catch(function (err) {
           console.error('Registrasi service worker gagal.', err);
         });
