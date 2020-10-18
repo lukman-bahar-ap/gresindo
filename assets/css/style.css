@@ -179,7 +179,7 @@ p {
   .colom-box img {
      /* */
      max-height: 100%;
-     max-width: 100%;
+     width: 100%;
      overflow: hidden;
 	   border-radius: 10px 10px 0px 0px;
   }
@@ -333,6 +333,10 @@ p {
     top: 0;
   }
 }
+
+.slides{background-color:transparent !important}
+.slider .indicators .indicator-item{background-color:#c9004c !important;}
+.slider .indicators .indicator-item.active{background-color:#e0e0e0 !important;}
 
 .icon-block {
   padding: 0 15px;
