@@ -16,11 +16,18 @@ main {
   flex: 1 0 auto;
 }
 
+.secondary-nav {
+  width: 15em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
 nav ul a,
 .brand-logo,
 .sidenav li a {
   font-weight: bold;
-  color: #2c0231 ;
+  color: var(--primary-color); ;
   height:auto !important;
 }
 nav ul li :active, nav ul li .active, nav ul li a:active {
@@ -171,8 +178,7 @@ p {
 }
   .colom-box img {
      /* */
-     padding-top: 10px;
-     max-height: 150px;
+     max-height: 100%;
      max-width: 100%;
      overflow: hidden;
 	   border-radius: 10px 10px 0px 0px;
@@ -234,7 +240,7 @@ p {
   background-image: var(--banner-home);
   background-position: center; 
   background-size: cover;  
-  min-height: 580px;
+  min-height: 500px;
   line-height: 0;
   height: auto;
   width: 100%;
@@ -248,10 +254,10 @@ p {
   background-size: cover;
   background-position-x:50%;
   background-position-y:50%;
-  min-height: 580px;
+  min-height: 500px;
   line-height: 0;
   align-items: center;
-  width: 98%;
+  width: 94%;
   color: rgba(255,255,255,.9);
   border-radius: 40px;
 }

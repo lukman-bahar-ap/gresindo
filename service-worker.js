@@ -10,16 +10,6 @@ const CACHE_NAME = "mc-gresindo-v1";
 // workbox.skipWaiting();
 // workbox.clientsClaim();
 
-workbox.routing.registerRoute(
-  new RegExp('https://api.football-data.org/v2/'),
-  workbox.strategies.staleWhileRevalidate({
-      cacheName: 'api-football-data.org',
-      cacheExpiration: {
-          maxAgeSeconds: 60 * 14 //14hr
-      }
-  })
-);
-
 workbox.precaching.precacheAndRoute([
   { url: '/index.html', revision: '1' },
   { url: '/team-info.html', revision: '1' },
@@ -56,6 +46,16 @@ workbox.routing.registerRoute(
       }),
     ],
   }),
+);
+
+workbox.routing.registerRoute(
+  new RegExp('https://api.football-data.org/v2/'),
+  workbox.strategies.staleWhileRevalidate({
+      cacheName: 'api-football-data.org',
+      cacheExpiration: {
+          maxAgeSeconds: 60 * 14 //14hr
+      }
+  })
 );
 
 self.addEventListener('push', event => {

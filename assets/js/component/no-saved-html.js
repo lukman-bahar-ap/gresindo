@@ -1,6 +1,6 @@
 class NoSavedTemplate {
    
-        static showNoSavedPage () {
+        static showNoSavedPage = () => {
 
             return  `
                 <div class="container">

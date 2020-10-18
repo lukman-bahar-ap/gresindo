@@ -1,12 +1,11 @@
 {
-    "name": "Bola Premier League",
-    "short_name": "Bola PL Apps",
-    "description": "League Information Online",
+    "name": "GRESINDO",
+    "short_name": "GRESINDO",
+    "description": "konveksi, fashion, muslimah, baju, celana, kualitas jahitan terbaik",
     "start_url": "/index.html",
-    "display": "standalone",
+    "display": "fullscreen",
     "background_color": "#2c0231",
     "theme_color": "#2c0231",
-    "gcm_sender_id": "91036698074",
     "icons": [
          {
             "src": "/assets/images/icon/icon72.png",

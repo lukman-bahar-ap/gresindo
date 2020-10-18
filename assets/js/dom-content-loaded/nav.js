@@ -1,7 +1,3 @@
-import StandingData from "../api/standings-data.js"
-import MatchSchedule from "../api/matches-data.js"
-import TeamData from "../api/teams-data.js"
-import TeamsDB from "../db/teams-db.js"
 import NotFoundTemplate from "../component/not-found-html.js";
 import NoAccessTemplate from "../component/no-access-html.js";
 import GlobalFunct from "../utility/global-funct.js";
@@ -63,16 +59,6 @@ import GlobalFunct from "../utility/global-funct.js";
         .then(data => {
  
           content.innerHTML = data;
-          // tambahkan blok if berikut
-          if (page === "home" || page === "standings") {
-                StandingData.getStandings();
-          } else if (page === "saved") {
-                TeamsDB.getSavedTeam();
-          } else if (page === "teams") {
-                TeamData.getTeams();
-          } else if (page === "matches") {
-                MatchSchedule.getMatches();
-          }
 
         }).catch(error => {
 

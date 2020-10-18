@@ -30,8 +30,9 @@ class TeamsTemplate {
           valueTeamHTML += `
             <div class="center">
                   <img src="assets/images/icon/empty.png"/>
-                  <p><b>Saved Teams will show up here</b><p>
-                  <p>So you can easily view them after saved your favorite teams<p>
+                  <p><b>Belum ada koleksi tersimpan</b><p>
+                  <p>Kamu bisa menyimpan koleksi kami pada browser kamu disini
+                  <a href="index.html#collection">Favorite</a><p>
             </div>`;
 
         }else{
